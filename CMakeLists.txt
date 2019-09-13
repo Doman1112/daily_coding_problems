@@ -6,6 +6,4 @@ else()
     add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-add_executable(starter main.cpp)
-
-target_compile_features(starter PRIVATE cxx_lambda_init_captures)
+add_executable(daily_coding_challenges main.cpp)

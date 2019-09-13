@@ -11,7 +11,7 @@
  * @param[in] k             Number to test.
  * @return true if we found two numbers that add up to \p - false otherwise
  */
-bool containsIntegersToAddUp(const std::vector<int>& listOfNumbers, const int k) {
+bool containsIntegersToAddUp(std::vector<int> listOfNumbers, const int k) {
 
     // Sort the list first.
     std::sort(listOfNumbers.begin(), listOfNumbers.end());
