@@ -6,7 +6,7 @@ conan_basic_setup()
 
 ADD_EXECUTABLE(${PROJECT_NAME} test_13_09_2019.cpp)
 
-target_link_libraries(${PROJECT_NAME} PRIVATE ${CMAKE_BINARY_DIR}/lib)
+target_link_libraries(${PROJECT_NAME} ${CMAKE_BINARY_DIR}/lib)
 target_include_directories(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/..)
 
 target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS} code_solution_1)
