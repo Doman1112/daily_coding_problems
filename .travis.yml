@@ -4,9 +4,16 @@ compiler:
   - clang
   - gcc
 
+install:
+  - pip install conan
+  - conan user
+
 before_script:
   - mkdir build
   - cd build
+  - conan install ..
   - cmake ..
   
-script: make
+script: 
+  - make
+  - ctest
