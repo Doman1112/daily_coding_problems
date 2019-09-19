@@ -22,7 +22,7 @@ build_script:
   
     cd build
     
-    conan install ..
+    conan install .. -o gtest:shared=True
   
     cmake c:\projects\source -G "Visual Studio 15" -DCMAKE_GENERATOR_PLATFORM=x64
   
