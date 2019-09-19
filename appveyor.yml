@@ -10,7 +10,9 @@ install:
     
     pip.exe install conan
     
-    conan user # Create the conan data directory
+    conan profile new default --detect
+    
+    conan profile update settings.compiler.libcxx=libstdc++11 default
     
     conan --version
 
