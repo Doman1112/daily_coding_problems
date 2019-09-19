@@ -30,4 +30,4 @@ build_script:
 
 test_script:
 - cmd: >-
-    ctest . -VV -C Debug 
+    ctest . -V -C Debug --timeout=60
