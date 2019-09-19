@@ -12,8 +12,6 @@ install:
     
     conan profile new default --detect
     
-    conan profile update settings.compiler.libcxx=libstdc++11 default
-    
     conan --version
 
 build_script:
