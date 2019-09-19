@@ -30,4 +30,4 @@ build_script:
 
 test_script:
 - cmd: >-
-    ctest . -C "Debug"
+    ctest . --output-on-failure -VV -C Debug 
