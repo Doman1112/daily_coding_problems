@@ -27,3 +27,7 @@ build_script:
     cmake c:\projects\source -G "Visual Studio 15" -DCMAKE_GENERATOR_PLATFORM=x64
   
     cmake --build . --config "Debug"
+
+test_script:
+- cmd: >-
+    ctest .
