@@ -24,6 +24,6 @@ build_script:
     
     conan install .. --build
   
-    cmake c:\projects\source -G "Visual Studio 15"
+    cmake c:\projects\source -G "Visual Studio 15" -DCMAKE_GENERATOR_PLATFORM=x64
   
     cmake --build . --config "Debug"
