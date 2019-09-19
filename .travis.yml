@@ -15,7 +15,7 @@ install:
 before_script:
   - mkdir build
   - cd build
-  - conan install ..
+  - conan install .. --build
   - cmake ..
   
 script: 
