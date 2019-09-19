@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.9.2)
 project(tests CXX)
 
-INCLUDE(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+include(GoogleTest)
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+
 conan_basic_setup()
 
 ADD_EXECUTABLE(${PROJECT_NAME} test_13_09_2019.cpp)
