@@ -30,6 +30,7 @@ build_script:
 - cmake --build . --config %CONFIGURATION%
     
 test_script:
+- cmd: type CTestTestfile.cmake
 - cmd: dir
 - cmd: ctest . -C %CONFIGURATION% --timeout 60
 
