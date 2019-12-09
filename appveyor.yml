@@ -23,17 +23,12 @@ configuration:
   - Release
 
 build_script:
-- cmd: >-
-    mkdir build
-  
-    cd build
-    
-    conan install .. -o gtest:shared=True
-  
-    cmake c:\projects\source -DBUILD_TEST=TRUE -G "Visual Studio 15" -DCMAKE_GENERATOR_PLATFORM=x64 -DCMAKE_BUILD_TYPE:STRING=Release
-  
-    cmake --build . --config %CONFIGURATION%
+- mkdir build
+- cd build
+- ps: conan install .. -o gtest:shared=True
+- ps: cmake c:\projects\source -DBUILD_TEST=TRUE -G "Visual Studio 15" -DCMAKE_GENERATOR_PLATFORM=x64 -DCMAKE_BUILD_TYPE:STRING=Release
+- ps: cmake --build . --config %CONFIGURATION%
     
 test_script:
-  - cmd: ctest -C %CONFIGURATION% --timeout 60
+- ps: ctest -C %CONFIGURATION% --timeout 60
 
