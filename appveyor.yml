@@ -31,5 +31,5 @@ build_script:
     
 test_script:
 - cmd: dir
-- ps: ctest . -C %CONFIGURATION% --timeout 60
+- cmd: ctest . -C %CONFIGURATION% --timeout 60
 
