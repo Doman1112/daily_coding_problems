@@ -34,5 +34,9 @@ test_script:
 - cmd: dir
 - cmd: cd 13_09_2019
 - cmd: dir
+- cmd: cd tests
+- cmd: dir
+- cmd: tests.exe
 - cmd: ctest . -C %CONFIGURATION% --timeout 60
+
 
