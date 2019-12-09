@@ -19,7 +19,6 @@ install:
     conan --version
 
 configuration:
-  - Debug
   - Release
 
 build_script:
