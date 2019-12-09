@@ -32,9 +32,9 @@ build_script:
   
     cmake c:\projects\source -DBUILD_TEST=TRUE -G "Visual Studio 15" -DCMAKE_GENERATOR_PLATFORM=x64
   
-    cmake --build . --config %CONFIGURATION%
+    cmake --build . --config "Debug"
     
-test_script:
-- cmd: >-
-    dir
-- ps: ctest -VV -C %CONFIGURATION% --timeout 60
+    cd bin
+    
+    ctest -VV -C "Debug" --timeout 60
+
