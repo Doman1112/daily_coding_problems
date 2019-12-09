@@ -30,5 +30,5 @@ build_script:
 - cmake --build . --config %CONFIGURATION%
     
 test_script:
-- ps: ctest -C %CONFIGURATION% --timeout 60
+- ps: ctest . -C %CONFIGURATION% --timeout 60
 
