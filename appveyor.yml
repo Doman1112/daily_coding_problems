@@ -34,7 +34,5 @@ build_script:
   
     cmake --build . --config "Debug"
     
-    cd bin
-    
     ctest -VV -C "Debug" --timeout 60
 
