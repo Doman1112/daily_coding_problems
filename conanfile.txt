@@ -5,5 +5,6 @@ gtest/1.8.1@bincrafters/stable
 cmake
 
 [imports]
+bin, *.dll -> .
 bin, *.dll -> ./bin # Copies all dll files from the package "bin" folder to my project "bin" folder
 lib, *.dylib* -> ./bin # Copies all dylib files from the package "lib" folder to my project "bin" folder
